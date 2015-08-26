@@ -8,7 +8,7 @@
   "main": "Chart.ios.js",
   "author": "Hyun Cho <hyun@onefold.io> (http://onefold.io)",
   "peerDependencies": {
-    "react-native": "^0.4.0"
+    "react-native": ">=0.4.0"
   },
   "keywords": [
     "react-native",
