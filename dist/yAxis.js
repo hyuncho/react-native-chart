@@ -31,7 +31,7 @@ YAxis=function(_Component){_inherits(YAxis,_Component);
 
 
 
-function YAxis(props){_classCallCheck(this,YAxis);var _this=_possibleConstructorReturn(this,Object.getPrototypeOf(YAxis).call(this,
+function YAxis(props){_classCallCheck(this,YAxis);var _this=_possibleConstructorReturn(this,(YAxis.__proto__||Object.getPrototypeOf(YAxis)).call(this,
 props));_this.
 
 
