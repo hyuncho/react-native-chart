@@ -16,7 +16,7 @@ backgroundColor:'transparent'}});var
 
 
 
-XAxis=function(_Component){_inherits(XAxis,_Component);function XAxis(){_classCallCheck(this,XAxis);return _possibleConstructorReturn(this,Object.getPrototypeOf(XAxis).apply(this,arguments));}_createClass(XAxis,[{key:'render',value:function render()
+XAxis=function(_Component){_inherits(XAxis,_Component);function XAxis(){_classCallCheck(this,XAxis);return _possibleConstructorReturn(this,(XAxis.__proto__||Object.getPrototypeOf(XAxis)).apply(this,arguments));}_createClass(XAxis,[{key:'render',value:function render()
 
 
 

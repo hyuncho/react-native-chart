@@ -14,7 +14,7 @@ justifyContent:'space-around'}});var
 
 
 BarChart=function(_Component){_inherits(BarChart,_Component);
-function BarChart(props){_classCallCheck(this,BarChart);var _this=_possibleConstructorReturn(this,Object.getPrototypeOf(BarChart).call(this,
+function BarChart(props){_classCallCheck(this,BarChart);var _this=_possibleConstructorReturn(this,(BarChart.__proto__||Object.getPrototypeOf(BarChart)).call(this,
 props));_this.
 
 
@@ -27,7 +27,7 @@ _this.props.data.onDataPointPress(e,dataPoint,index);
 
 _drawBar=function(_dataPoint,index){var _dataPoint2=_slicedToArray(
 _dataPoint,2);var _x=_dataPoint2[0];var dataPoint=_dataPoint2[1];
-var backgroundColor=_this.props.color||C.BLUE;
+var backgroundColor=typeof _this.props.barColors!=='undefined'&&_this.props.barColors[index]?_this.props.barColors[index]:C.BLUE;
 var HEIGHT=_this.props.height;
 var WIDTH=_this.props.width;
 var widthPercent=_this.props.widthPercent||0.5;

@@ -8,7 +8,7 @@ var _Wedge=require('./Wedge');var _Wedge2=_interopRequireDefault(_Wedge);functio
 var getColor=function getColor(colors,index){return colors[index]||colors[colors.length%index];};var
 
 PieChart=function(_Component){_inherits(PieChart,_Component);
-function PieChart(props){_classCallCheck(this,PieChart);var _this=_possibleConstructorReturn(this,Object.getPrototypeOf(PieChart).call(this,
+function PieChart(props){_classCallCheck(this,PieChart);var _this=_possibleConstructorReturn(this,(PieChart.__proto__||Object.getPrototypeOf(PieChart)).call(this,
 props));_this.
 
 

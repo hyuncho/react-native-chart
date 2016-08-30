@@ -50,7 +50,7 @@ var _reactNative=require('react-native');function _interopRequireDefault(obj){re
  */var Shape=_reactNative.ART.Shape;var Path=_reactNative.ART.Path;/**
  * Wedge is a React component for drawing circles, wedges and arcs.	Like other
  * ReactART components, it must be used in a <Surface>.
- */var Wedge=function(_Component){_inherits(Wedge,_Component);function Wedge(props){_classCallCheck(this,Wedge);var _this=_possibleConstructorReturn(this,Object.getPrototypeOf(Wedge).call(this,props));_this.circleRadians=Math.PI*2;_this.radiansPerDegree=Math.PI/180;_this._degreesToRadians=_this._degreesToRadians.bind(_this);return _this;}/**
+ */var Wedge=function(_Component){_inherits(Wedge,_Component);function Wedge(props){_classCallCheck(this,Wedge);var _this=_possibleConstructorReturn(this,(Wedge.__proto__||Object.getPrototypeOf(Wedge)).call(this,props));_this.circleRadians=Math.PI*2;_this.radiansPerDegree=Math.PI/180;_this._degreesToRadians=_this._degreesToRadians.bind(_this);return _this;}/**
 	 * _degreesToRadians(degrees)
 	 *
 	 * Helper function to convert degrees to radians

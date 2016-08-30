@@ -19,7 +19,7 @@ var heightZero=_reactNative.Platform.OS==='ios'?0:1;var
 
 LineChart=function(_Component){_inherits(LineChart,_Component);
 
-function LineChart(props){_classCallCheck(this,LineChart);var _this=_possibleConstructorReturn(this,Object.getPrototypeOf(LineChart).call(this,
+function LineChart(props){_classCallCheck(this,LineChart);var _this=_possibleConstructorReturn(this,(LineChart.__proto__||Object.getPrototypeOf(LineChart)).call(this,
 props));_this.
 
 
@@ -55,7 +55,7 @@ maxBound+=_this.props.verticalGridStep;
 
 var divisor=calculateDivisor(minBound,maxBound);
 var scale=(containerHeight+1)/divisor;
-var horizontalStep=containerWidth/data.length;
+var horizontalStep=containerWidth/(data.length-1);
 var dataPoints=[];
 var firstDataPoint=data[0][1];
 var height=minBound*scale+(containerHeight-firstDataPoint*scale);
@@ -95,10 +95,9 @@ _react2.default.createElement(_reactNative.View,{style:{position:'absolute'}},
 _react2.default.createElement(Surface,{width:containerWidth,height:containerHeight})),
 
 function(){
-if(!_this.props.showDataPoint)return null;
 return(
 _react2.default.createElement(Surface,{width:containerWidth,height:containerHeight},
-dataPoints.map(function(d,i){return _react2.default.createElement(_Circle2.default,_extends({key:i},d));})));
+_this.props.showDataPoint&&dataPoints.map(function(d,i){return _react2.default.createElement(_Circle2.default,_extends({key:i},d));})));
 
 
 }()));

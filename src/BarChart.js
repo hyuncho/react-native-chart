@@ -27,7 +27,7 @@ export default class BarChart extends Component<void, any, any> {
 
 	_drawBar = (_dataPoint : [number, number], index : number) => {
 		const [_x, dataPoint] = _dataPoint;
-		const backgroundColor = this.props.color || C.BLUE;
+		const backgroundColor = (typeof this.props.barColors !== 'undefined' && this.props.barColors[index] ? this.props.barColors[index] : C.BLUE);
 		const HEIGHT = this.props.height;
 		const WIDTH = this.props.width;
 		let widthPercent = this.props.widthPercent || 0.5;

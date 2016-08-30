@@ -25,7 +25,7 @@ declare type Chart = {
 	yAxisUseDecimal?: boolean,
 
 	// Bar chart props
-	color?: number | string,
+	barColors?: Array<number | string>,
 	cornerRadius?: number,
 	widthPercent?: number,
 

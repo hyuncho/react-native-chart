@@ -2,7 +2,7 @@ Object.defineProperty(exports,"__esModule",{value:true});var _createClass=functi
 var _reactNative=require('react-native');
 var _util=require('./util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
 
-Grid=function(_Component){_inherits(Grid,_Component);function Grid(){_classCallCheck(this,Grid);return _possibleConstructorReturn(this,Object.getPrototypeOf(Grid).apply(this,arguments));}_createClass(Grid,[{key:'render',value:function render()
+Grid=function(_Component){_inherits(Grid,_Component);function Grid(){_classCallCheck(this,Grid);return _possibleConstructorReturn(this,(Grid.__proto__||Object.getPrototypeOf(Grid)).apply(this,arguments));}_createClass(Grid,[{key:'render',value:function render()
 
 
 
@@ -49,7 +49,7 @@ borderTopWidth:intendedLineWidth};
 
 var verticalGridStyle={
 height:this.props.height+1,
-width:this.props.width/data.length*stepsBetweenVerticalLines,
+width:this.props.width/(data.length-1)*stepsBetweenVerticalLines,
 borderRightColor:this.props.gridColor,
 borderRightWidth:intendedLineWidth};
 
@@ -74,4 +74,4 @@ verticalRange.map(function(_,i){return _react2.default.createElement(_reactNativ
 }()));
 
 
-}}]);return Grid;}(_react.Component);Grid.propTypes={showGrid:_react.PropTypes.bool,data:_react.PropTypes.array.isRequired,verticalGridStep:_react.PropTypes.number.isRequired,horizontalGridStep:_react.PropTypes.number,gridLineWidth:_react.PropTypes.number,gridColor:_react.PropTypes.oneOfType([_react.PropTypes.number,_react.PropTypes.string]),hideHorizontalGridLines:_react.PropTypes.bool,hideVerticalGridLines:_react.PropTypes.bool,height:_react.PropTypes.number.isRequired,width:_react.PropTypes.number.isRequired,type:_react.PropTypes.oneOf(['line','bar','pie']).isRequired};Grid.defaultProps={};exports.default=Grid;
+}}]);return Grid;}(_react.Component);Grid.propTypes={showGrid:_react.PropTypes.bool,data:_react.PropTypes.array.isRequired,verticalGridStep:_react.PropTypes.number.isRequired,horizontalGridStep:_react.PropTypes.number,gridLineWidth:_react.PropTypes.number,gridColor:_react.PropTypes.oneOfType([_react.PropTypes.number,_react.PropTypes.string]),hideHorizontalGridLines:_react.PropTypes.bool,hideVerticalGridLines:_react.PropTypes.bool,height:_react.PropTypes.number,width:_react.PropTypes.number,type:_react.PropTypes.oneOf(['line','bar','pie']).isRequired};Grid.defaultProps={};exports.default=Grid;
