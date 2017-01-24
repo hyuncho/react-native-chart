@@ -255,7 +255,7 @@ Chart.propTypes = {
 	widthPercent: PropTypes.number,
 
 	// Line/multi-line chart props
-	fillColor: PropTypes.oneOfType([PropTypes.number, PropTypes.string]), // need to adjust for multi-line
+	fillColor: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
 	dataPointColor: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
 	dataPointFillColor: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
 	dataPointRadius: PropTypes.number,

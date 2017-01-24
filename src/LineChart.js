@@ -139,14 +139,17 @@ export default class LineChart extends Component<void, any, any> {
 			return allDisjointPaths;
 		});
 
-		var multipleFills = dataPoints.map( (dataPointSet, index) => {
-			let allDisjointPaths = fillPath[index].map ( (singlePath, subIndex) => {
-				return (
-					<AnimatedShape d={singlePath} fill={this.props.fillColor} />
-				);
-			});
-			return allDisjointPaths;
-		});
+		var multipleFills = this.props.fillColor
+			? dataPoints.map( (dataPointSet, index) => {
+					let allDisjointPaths = fillPath[index].map ( (singlePath, subIndex) => {
+					return (
+						<AnimatedShape d={singlePath} fill={this.props.fillColor[index]} />
+					);
+				});
+				return allDisjointPaths;
+			})
+			: null;
+
 
 		return (
 			<View>
