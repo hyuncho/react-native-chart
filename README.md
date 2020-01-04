@@ -112,7 +112,7 @@ Use '' y-values to signify the 'render but empty' data points.
 | yAxisWidth              | number                    | Width of the Y-axis container                             | No       | 30                    |
 | yAxisUseDecimal         | boolean                   | Show decimals on Y-axis labels                            | No       | false                 |
 | yAxisShortLabel         | boolean                   | Shorten yAxis labels with K, M, B for thousand<->billion, etc  | No       | false                 |
-
+| widthPercent         | number                   | Width of the bar chart's bars in percentage  | No       | 0.5                 |
 ## TODO
 - [ ] Code cleanup
 - [X] Multi-line chart
