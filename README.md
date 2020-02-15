@@ -49,12 +49,12 @@ const styles = StyleSheet.create({
 	},
 });
 
-const data = [[
+const data = [
 	[0, 1],
 	[1, 3],
 	[3, 7],
 	[4, 9],
-]];
+];
 
 class SimpleChart extends Component {
 	render() {
