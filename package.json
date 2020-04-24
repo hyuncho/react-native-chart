@@ -48,7 +48,8 @@
     "babel-cli": "^6.10.1",
     "babel-eslint": "^6.0.0",
     "babel-plugin-transform-flow-strip-types": "^6.8.0",
-    "babel-preset-react-native": "^1.5.3"
+    "babel-preset-react-native": "^1.5.3",
+    "prop-types": "^15.7.2"
   },
   "description": "[![Join the chat at https://gitter.im/tomauty/react-native-chart](https://badges.gitter.im/tomauty/react-native-chart.svg)](https://gitter.im/tomauty/react-native-chart) [![npm version](https://badge.fury.io/js/react-native-chart.svg)](https://badge.fury.",
   "devDependencies": {
@@ -86,5 +87,5 @@
     "lint": "eslint src",
     "prepublish": "npm run build"
   },
-  "version": "1.0.8-beta"
+  "version": "1.0.9-beta"
 }
